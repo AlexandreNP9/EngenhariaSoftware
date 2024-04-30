@@ -17,3 +17,7 @@ open_closed_principle.js
 
     Aqui foi adicionado uma classe ArCondicionado ao quarto, sem alterar o restante do código.
 
+liskov_substituition_principle.js
+    Esse princípio estabelece que os objetos de uma classe base devem ser substituíveis por objetos de suas classes derivadas, sem afetar a integridade do programa.
+
+    Aqui, as classes têm subclasses; e as subclasses têm métodos específios
