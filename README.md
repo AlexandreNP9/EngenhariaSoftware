@@ -1,5 +1,7 @@
 # EngenhariaSoftware
-Repositório para atividades da disicplina de Engenharia de Software
+Repositório para atividades da disicplina de Engenharia de Software.
+
+A pasta solid2p contém os exemplos dos princípios SOLID+2
 
 Utilizei exemplos em JavaScript, com a temática de Casa, para exemplificar 4 princípios do SOLID+2.
 
