@@ -1,64 +1,63 @@
 class Casa {
     constructor() {
-      this.comodos = [];
+        this.comodos = [];
     }
-  
+
     adicionarComodo(comodo) {
-      this.comodos.push(comodo);
+        this.comodos.push(comodo);
     }
-  
+
     ligarTodosEquipamentos() {
-      this.comodos.forEach(comodo => comodo.ligarEquipamentos());
+        this.comodos.forEach(comodo => comodo.ligarEquipamentos());
     }
-  }
-  
-  class Comodo {
+}
+
+class Comodo {
     constructor() {
-      this.equipamentos = [];
+        this.equipamentos = [];
     }
-  
+
     adicionarEquipamento(equipamento) {
-      this.equipamentos.push(equipamento);
+        this.equipamentos.push(equipamento);
     }
-  
+
     ligarEquipamentos() {
-      this.equipamentos.forEach(equipamento => equipamento.ligar());
+        this.equipamentos.forEach(equipamento => equipamento.ligar());
     }
-  }
-  
-  class Televisao {
+}
+
+class Televisao {
     ligar() {
-      console.log("Televisão ligada");
+        console.log("Televisão ligada");
     }
-  }
-  
-  class Fogao {
+}
+
+class Fogao {
     ligar() {
-      console.log("Fogão ligado");
+        console.log("Fogão ligado");
     }
-  }
-  
-  // nova classe
-  class ArCondicionado {
+}
+
+// nova classe
+class ArCondicionado {
     ligar() {
-      console.log("Ar condicionado ligado");
+        console.log("Ar condicionado ligado");
     }
-  }
-  
-  
-  const minhaCasa = new Casa();
-  const salaDeEstar = new Comodo();
-  salaDeEstar.adicionarEquipamento(new Televisao());
-  minhaCasa.adicionarComodo(salaDeEstar);
-  
-  const cozinha = new Comodo();
-  cozinha.adicionarEquipamento(new Fogao());
-  minhaCasa.adicionarComodo(cozinha);
-  
-  // nova instância ArCondicionado adicionada sem modificar o código existente
-  const quarto = new Comodo();
-  quarto.adicionarEquipamento(new ArCondicionado());
-  minhaCasa.adicionarComodo(quarto);
-  
-  minhaCasa.ligarTodosEquipamentos();
-  
+}
+
+
+const minhaCasa = new Casa();
+const salaDeEstar = new Comodo();
+salaDeEstar.adicionarEquipamento(new Televisao());
+minhaCasa.adicionarComodo(salaDeEstar);
+
+const cozinha = new Comodo();
+cozinha.adicionarEquipamento(new Fogao());
+minhaCasa.adicionarComodo(cozinha);
+
+// nova instância ArCondicionado adicionada sem modificar o código existente
+const quarto = new Comodo();
+quarto.adicionarEquipamento(new ArCondicionado());
+minhaCasa.adicionarComodo(quarto);
+
+minhaCasa.ligarTodosEquipamentos();

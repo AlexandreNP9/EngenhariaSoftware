@@ -20,4 +20,9 @@ open_closed_principle.js
 liskov_substituition_principle.js
     Esse princípio estabelece que os objetos de uma classe base devem ser substituíveis por objetos de suas classes derivadas, sem afetar a integridade do programa.
 
-    Aqui, as classes têm subclasses; e as subclasses têm métodos específios
+    Aqui, as classes têm subclasses; e as subclasses têm métodos específios.
+
+interface_segregation_principle.js
+    Esse princípio diz que uma classe não deve ser forçada a implementar interfaces que ela não utiliza.
+
+    Por exemplo, televisão é ligável mas não é ajustável. Ao contrário de ar-condicionado, que é ligável E ajustável.
